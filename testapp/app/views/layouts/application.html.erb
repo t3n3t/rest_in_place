@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REST in Place Testapp</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "rest_in_place" %>
+  <%= csrf_meta_tags %>
+
+  <style type="text/css" media="screen">
+    .rip-active {
+      padding:; 2px;
+      border: solid red;
+    }
+  </style>
+  <script type="text/javascript">
+    jQuery(function(){
+      jQuery("body").prepend("<p>jQuery Version: " + jQuery.fn.jquery + "</p>")
+    });
+  </script>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
